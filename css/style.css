@@ -1,2 +1,8 @@
- 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Остальной код */
   
