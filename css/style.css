@@ -5,4 +5,60 @@
 }
 
 /* Остальной код */
-  
+/* :root {
+  --main-font:'Crimson Text', serif;
+ --main-size: 30px;
+} */
+body {
+  background-image: url('../images/background-milky-way.jpg');
+  background-color: #130561;
+}
+.text {
+  font-family: 'Crimson Text', serif;
+  font-size: 28px;
+  line-height: 1;
+  color: #f2f2f9;
+  text-shadow: -2px -2px rgb(38, 21, 123);
+}
+header {
+  display: inline-block;
+  padding-top: 30px;
+  padding-right: 13px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  border: 1mm ridge rgba(38, 15, 152, 0);
+  border-radius: 3%;
+}
+footer {
+  text-align: center;
+  padding-bottom: 10px;
+}
+.avatar {
+  display: inline-block;
+  /* max-width: 60%; */
+  width: 200px;
+  height: auto;
+}
+.function-pic {
+  display: inline-block;
+  /* max-width: 60%; */
+  width: 395px;
+  height: auto;
+}
+.list {
+  list-style: none;
+}
+
+section {
+  display: inline-block;
+  width: 950px;
+  /* padding-top: 3px; */
+  /* padding-right: 100px; */
+  /* padding-bottom: 130px; */
+  padding-left: 20px;
+  /* border: 1mm ridge rgba(38, 15, 152, 0.118); */
+}
+
+.skills {
+  text-indent: 3%;
+}
