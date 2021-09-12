@@ -30,6 +30,8 @@ header {
   border-radius: 3%;
 }
 footer {
+  font-family: Arial, sans-serif;
+  font-size: 70%;
   text-align: center;
   padding-bottom: 10px;
 }
@@ -56,9 +58,17 @@ section {
   /* padding-right: 100px; */
   /* padding-bottom: 130px; */
   padding-left: 20px;
-  /* border: 1mm ridge rgba(38, 15, 152, 0.118); */
 }
 
 .skills {
   text-indent: 3%;
+}
+
+.rspic {
+  display: inline-block;
+  width: 15%;
+  /* padding: 1mm 1mm 1mm 1mm; */
+  border: 1mm ridge rgba(119, 108, 170, 0.022);
+  border-radius: 10%;
+  background-color: #8181ee95;
 }
