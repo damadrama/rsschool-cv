@@ -14,68 +14,98 @@
       href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap"
       rel="stylesheet"
     />
-    <style></style>
   </head>
-  <body class="text">
-    <header>
-      <!-- command? -->
-      <img  src="./images/pic_for_avatar.png" alt="avatar" class="avatar"/>
+  <body>
+    <div class="container">
+      <header>
+        <!-- command? -->
+        <img src="./images/pic_for_avatar.png" alt="avatar" class="avapic" /><br>
+        <h1 class="name">Nataliia Dramare</h1><br>
+        <h2 class="name">JS/Front-end developer</h2>
+      </header>
 
-      <h1 class="title">Nataliia Dramare</h1>
-      <h4>JS/Front-end developer</h4>
+      <main class="major">
+        <aside>
+          <h3>Contacts</h3>
+          <a href="https://t.me/DamaDramaa" target="_blank">
+            <img
+              src="../images/Telegram.png"
+              alt="Link on Telegram"
+              width="60"
+            />
+          </a>
+          <a href="https://github.com/damadrama" target="_blank">
+            <img src="../images/GitHub.jpg" alt="Link on GitHub" width="70" />
+          </a>
 
-      <h4>Contacts</h4>
-      <a href="https://t.me/DamaDramaa" target="_blank">
-        <img src="../images/Telegram.png" alt="Link on Telegram" width="60" />
-      </a>
-      <a href="https://github.com/damadrama" target="_blank">
-        <img src="../images/GitHub.jpg" alt="Link on GitHub" width="70" />
-      </a>
+          <h3 class="skills">Soft skills</h3>
+          <ul class="list">
+            <li>adaptability</li>
+            <li>responsibility</li>
+            <li>teamwork</li>
+          </ul>
 
-      <h4 class="skills">Soft skills</h4>
-      <ul class="list">
-        <li>adaptability</li>
-        <li>responsibility</li>
-        <li>teamwork</li>
-      </ul>
-      <p>Intermediate level of English (B1)</p>
-    </header>
-    <section class="box">
-      <p>
-<h3>My goal</h3>is to have good and interesting job with what I would serve my society. 
+          <p>Intermediate level of English (B1)</p>
+        </aside>
 
-I like to learn new things, can sit and work all day long, also studying easy and fast.
-    </p>
+        <section>
+          <h3>My goal</h3>
+          <p>
+            is to have good and interesting job with what I would serve my
+            society. I like to learn new things, can sit and work all day long,
+            also studying easy and fast.
+          </p>
 
-      <figure>
-        <img src="./images/code.png" alt="screenShot" class="function-pic"/>
-        <figcaption><sup>*</sup>result of the code see in console</figcaption>
-      </figure>
+          <div class="code">
+            <code>
+              <pre>
+          
+          <span class="blue">function</span> <span class="yellow">filteredArray</span> <span class="sky">(numbers, value)</span> {
+            <span class="blue">const</span> <span class="bright-blue">filteredNumbers</span> = [];
+            <span class="sky">numbers</span>.<span class="yellow">forEach</span>(<span class="blue">function</span> (<span class="sky">element</span>) {
+              <span class="purple">if</span>  (<span class="sky">element</span> > <span class="sky">value</span>) {
+                <span class="bright-blue">filteredNumbers</span>.<span class="yellow">push</span>(<span class="sky">element</span>);
+              }
+            });
+            <span class="purple">return</span> <span class="bright-blue">filteredNumbers</span>;
+          }
+          console.log(filteredArray([1, 5, 3, 14, 5], 5)),
+          console.log(filteredArray([1, 2, 6, 8, 5], 3));
+          console.log(filteredArray([11, 12, 3, 4, 5], 13));
+          console.log(filteredArray([9, 22, 7, 4, 15], 10));
+          
+        </pre>
+            </code>
+          </div>
 
-      <h4>Education</h4>
-      <p>2014 DonNUET, degree in Marketing Management</p>
-    </section>
-    <p>
+          <h3>Education</h3>
+          <p>2014 DonNUET, degree in Marketing Management</p>
+        </section>
+      </main>
+
       <footer>
-      <a href="https://github.com/damadrama" target="_blank">My GitHub</a>
-      <p>2021</p>
-      <a href="https://rs.school/js/" target="_blank">
-        <img src="./images/rs_school_js.svg" class="rspic">
-        Link on RSschool course</a>
-    <p>Image by
-    <a
-    href="https://pixabay.com/users/felixmittermeier-4397258/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2695569"
-    >FelixMittermeier</a
-    >
-    from
-    <a
-    href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2695569"
-    >Pixabay</a
-    >
-  </p>
-    
-        
-    </footer>
+        <div class="links">
+          <a href="https://github.com/damadrama" target="_blank">My GitHub</a>
+          <p>2021</p>
+          <a href="https://rs.school/js/" target="_blank">
+            <img src="./images/rs_school_js.svg" class="rspic" />
+            Link on RSschool course</a
+          >
+          <p>
+            Image by
+            <a
+              href="https://pixabay.com/users/felixmittermeier-4397258/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2695569"
+              >FelixMittermeier</a
+            >
+            from
+            <a
+              href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2695569"
+              >Pixabay</a
+            >
+          </p>
+        </div>
+      </footer>
+    </div>
   </body>
   <script src="./index.js"></script>
 </html>

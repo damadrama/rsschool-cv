@@ -3,43 +3,88 @@
 *::after {
   box-sizing: border-box;
 }
+:root {
+  --background-pic: url('../images/background-milky-way.jpg');
+  --background-color: rgba(30, 36, 108, 0.324);
+}
+body {
+  display: block;
+  background-image: var(--background-pic);
+  background-color: var(--background-color);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
 
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  /* border:  1mm ridge rgba(38, 22, 108, 0);
+  background-color: #21337b3a; */
+}
 /* Остальной код */
 /* :root {
   --main-font:'Crimson Text', serif;
- --main-size: 30px;
+  --main-size: 30px;
 } */
-body {
-  background-image: url('../images/background-milky-way.jpg');
-  background-color: #130561;
-}
-.text {
+/* p {
+  width: 1000px;
+} */
+.container {
   font-family: 'Crimson Text', serif;
-  font-size: 28px;
+  font-size: 30px;
+  font-weight: bold;
   line-height: 1;
   color: #f2f2f9;
-  text-shadow: -2px -2px rgb(38, 21, 123);
+  text-shadow: -2px -2px rgb(12, 20, 77);
+
+  border: 1px solid red;
+  /* background-color: #010b4441; */
+  margin: 0 auto;
+  padding: 0 60px;
+
+  border-radius: 35px;
+  background-color: rgba(0, 7, 53, 0.385);
 }
+
+.major {
+  padding: 0 30px;
+  width: 1250px;
+  border: 1px solid yellow;
+}
+
 header {
-  display: inline-block;
+  /* display: inline; */
   padding-top: 30px;
   padding-right: 13px;
-  padding-bottom: 30px;
+  /* padding-bottom: 15px; */
   padding-left: 30px;
   border: 1mm ridge rgba(38, 15, 152, 0);
   border-radius: 3%;
+  /* margin-left: 200px; */
+  box-align: center;
 }
-footer {
-  font-family: Arial, sans-serif;
-  font-size: 70%;
-  text-align: center;
-  padding-bottom: 10px;
+
+.name {
+  display: inline;
+  font-variant: small-caps;
 }
-.avatar {
-  display: inline-block;
+
+/* section { */
+/* display: inline-block; */
+/* width: 1250px; */
+/* padding-top: 3px; */
+/* padding-right: 100px; */
+/* padding-bottom: 10px;
+  padding-left: 30px; */
+/* } */
+
+.avapic {
+  /* display: inline-block; */
   /* max-width: 60%; */
   width: 200px;
   height: auto;
+  /* padding-right: 10px; */
+  border-radius: 50%;
 }
 .function-pic {
   display: inline-block;
@@ -51,24 +96,43 @@ footer {
   list-style: none;
 }
 
-section {
-  display: inline-block;
-  width: 950px;
-  /* padding-top: 3px; */
-  /* padding-right: 100px; */
-  /* padding-bottom: 130px; */
-  padding-left: 20px;
-}
-
 .skills {
   text-indent: 3%;
 }
-
+footer {
+  font-family: Arial, sans-serif;
+  font-size: 70%;
+  text-align: center;
+  
+  border: 1px solid green;
+}
 .rspic {
   display: inline-block;
   width: 15%;
   /* padding: 1mm 1mm 1mm 1mm; */
-  border: 1mm ridge rgba(119, 108, 170, 0.022);
+  /* border: 1mm ridge rgba(119, 108, 170, 0.022); */
   border-radius: 10%;
   background-color: #8181ee95;
+}
+.links {
+  text-decoration: none;
+}
+
+.code {
+  border: 1mm rgb(211, 211, 211);
+}
+.purple {
+  color: rgba(175, 20, 206, 0.954);
+}
+.blue {
+  color: rgba(16, 13, 152, 0.988);
+}
+.sky {
+  color: rgba(20, 104, 206, 0.954);
+}
+.yellow {
+  color: rgba(20, 178, 206, 0.954);
+}
+.bright-blue {
+  color: rgb(4, 136, 252);
 }
