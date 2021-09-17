@@ -5,105 +5,125 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV in the form of html-page with css-styles</title>
-    <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,600&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <div class="container">
-      <header>
-        <!-- command? -->
-        <img src="./images/pic_for_avatar.png" alt="avatar" class="avapic" /><br>
-        <h1 class="name">Nataliia Dramare</h1><br>
-        <h2 class="name">JS/Front-end developer</h2>
-      </header>
-
       <main class="major">
-        <aside>
-          <h3>Contacts</h3>
-          <a href="https://t.me/DamaDramaa" target="_blank">
+        <aside class="left-part">
+          <header>
             <img
-              src="../images/Telegram.png"
-              alt="Link on Telegram"
-              width="60"
+              src="./images/pic_for_avatar.png"
+              alt="avatar"
+              class="avapic"
             />
-          </a>
-          <a href="https://github.com/damadrama" target="_blank">
-            <img src="../images/GitHub.jpg" alt="Link on GitHub" width="70" />
-          </a>
-
-          <h3 class="skills">Soft skills</h3>
-          <ul class="list">
+          </header>
+          <h3 class="contacts">Contacts</h3>
+          <div class="contacts-pics">
+            <a href="https://t.me/DamaDramaa" target="_blank">
+              <img
+                src="../images/Telegram.png"
+                alt="Link to Telegram"
+                width="80"
+                class="contacts-pics"
+              />
+            </a>
+            <a href="https://github.com/damadrama" target="_blank">
+              <img
+                class="contacts-pics"
+                src="../images/GitHub.jpg"
+                alt="Link to GitHub"
+                width="90"
+              />
+            </a>
+          </div>
+          <h3>Soft skills</h3>
+          <ul>
             <li>adaptability</li>
             <li>responsibility</li>
             <li>teamwork</li>
           </ul>
-
-          <p>Intermediate level of English (B1)</p>
+          <h3>Hard skills</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+          </ul>
         </aside>
-
-        <section>
-          <h3>My goal</h3>
-          <p>
+        <section class="right-part">
+          <div class="column">
+            <h1>Nataliia Dramare</h1>
+            <h2>JS/Front-end developer</h2>
+          </div>
+          <h3 class="goal">My goal</h3>
+          <p class="goal-text">
             is to have good and interesting job with what I would serve my
             society. I like to learn new things, can sit and work all day long,
             also studying easy and fast.
           </p>
-
-          <div class="code">
-            <code>
-              <pre>
-          
-          <span class="blue">function</span> <span class="yellow">filteredArray</span> <span class="sky">(numbers, value)</span> {
-            <span class="blue">const</span> <span class="bright-blue">filteredNumbers</span> = [];
-            <span class="sky">numbers</span>.<span class="yellow">forEach</span>(<span class="blue">function</span> (<span class="sky">element</span>) {
-              <span class="purple">if</span>  (<span class="sky">element</span> > <span class="sky">value</span>) {
-                <span class="bright-blue">filteredNumbers</span>.<span class="yellow">push</span>(<span class="sky">element</span>);
-              }
-            });
-            <span class="purple">return</span> <span class="bright-blue">filteredNumbers</span>;
-          }
-          console.log(filteredArray([1, 5, 3, 14, 5], 5)),
-          console.log(filteredArray([1, 2, 6, 8, 5], 3));
-          console.log(filteredArray([11, 12, 3, 4, 5], 13));
-          console.log(filteredArray([9, 22, 7, 4, 15], 10));
-          
-        </pre>
-            </code>
-          </div>
-
           <h3>Education</h3>
           <p>2014 DonNUET, degree in Marketing Management</p>
+          <p>Intermediate level of English (B1)</p>
+          <h3 class="code-topic">Here is the example of my code</h3>
+          <code class="code">
+            <pre>
+<span class="blue">function</span> <span class="yellow">filteredArray</span> <span class="sky">(numbers, value)</span> {
+ <span class="blue">const</span> <span class="bright-blue">filteredNumbers</span> = [];
+ <span class="sky">numbers</span>.<span class="yellow">forEach</span>(<span class="blue">function</span> (<span class="sky">element</span>) {
+  <span class="purple">if</span>  (<span class="sky">element</span> > <span class="sky">value</span>) {
+   <span class="bright-blue">filteredNumbers</span>.<span class="yellow">push</span>(<span class="sky">element</span>);
+  }
+ });
+ <span class="purple">return</span> <span class="bright-blue">filteredNumbers</span>;
+}
+</pre>
+            <!-- </code> -->
+          </code>
         </section>
       </main>
 
       <footer>
-        <div class="links">
-          <a href="https://github.com/damadrama" target="_blank">My GitHub</a>
-          <p>2021</p>
-          <a href="https://rs.school/js/" target="_blank">
-            <img src="./images/rs_school_js.svg" class="rspic" />
-            Link on RSschool course</a
+        <div class="footer-links">
+          <a class="links" href="https://rs.school/js/" target="_blank">
+            <img class="rspic" src="./images/rs_school_js.svg" alt="RSlogo" />
+          </a>
+          <a class="links" href="https://github.com/damadrama" target="_blank"
+            >My GitHub</a
           >
-          <p>
-            Image by
-            <a
-              href="https://pixabay.com/users/felixmittermeier-4397258/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2695569"
-              >FelixMittermeier</a
-            >
-            from
-            <a
-              href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2695569"
-              >Pixabay</a
-            >
-          </p>
+          <p class="links">2021</p>
         </div>
+        <p class="background-pic-text">
+          Image by
+          <a
+            class="links"
+            href="https://pixabay.com/users/felixmittermeier-4397258/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2695569"
+            >FelixMittermeier</a
+          >
+          from
+          <a
+            class="links"
+            href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2695569"
+            >Pixabay</a
+          >
+        </p>
       </footer>
     </div>
   </body>
