@@ -163,18 +163,4 @@ h3 {
   text-shadow: rgb(82, 138, 235) 1px 0 15px;
   line-height: 1;
 }
-.purple {
-  color: rgba(156, 18, 184, 0.954);
-}
-.blue {
-  color: rgba(1, 21, 170, 0.988);
-}
-.sky {
-  color: rgb(0, 208, 255);
-}
-.yellow {
-  color: rgba(24, 226, 199, 0.954);
-}
-.bright-blue {
-  color: rgb(0, 145, 255);
-}
+
