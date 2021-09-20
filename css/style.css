@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 :root {
   --background-pic: url('../images/background-milky-way.jpg');
   --background-color: rgba(10, 15, 48, 0.967);
@@ -38,7 +37,6 @@ body {
   justify-content: space-between;
 }
 
-
 header {
   padding-top: 30px;
   padding-right: 13px;
@@ -67,16 +65,21 @@ header {
   margin-top: 85px;
   margin-bottom: 0;
 }
-.contacts-pics {
+.contacts-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
+  flex-direction: row;
   align-items: center;
-  border-radius: 40%;
-  margin-top: 0;
 }
-
-ul {
+.contacts-pics {
+  border-radius: 40%;
+  width: 100px;
+  height: auto;
+}
+.ul {
   list-style: none;
   padding-left: 25px;
 }
